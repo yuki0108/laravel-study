@@ -10,6 +10,12 @@
 cd hogehoge/laravel-study
 ```
 
+`backend`ディレクトリを作成してください。
+
+```bash
+mkdir backend
+```
+
 ## Dockerの使い方
 
 ### Dockerイメージのビルド
