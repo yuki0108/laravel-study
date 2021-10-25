@@ -1,0 +1,54 @@
+version: "3"
+services:
+  nginx:
+    container_name: nginx
+    build:
+      context: .
+      dockerfile: ./infrastructure/nginx/Dockerfile
+    ports:
+      - 80:80
+    volumes:
+      - ./backend:/var/www/app:cached
+      - ./infrastructure/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    links:
+      - app
+    depends_on:
+      - app
+    working_dir: /var/www/app
+
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: ./infrastructure/php/Dockerfile
+    volumes:
+      - ./backend:/var/www/app:cached
+    working_dir: /var/www/app
+
+  db:
+    image: mysql:5.7
+    container_name: db
+    expose:
+      - "3306"
+    ports:
+      - "127.0.0.1:3306:3306"
+    environment:
+      MYSQL_DATABASE: app
+      MYSQL_ROOT_PASSWORD: root
+      TZ: Asia/Tokyo
+    volumes:
+      - ./infrastructure/mysql/my.cnf:/etc/mysql/conf.d/mysql.cnf:ro
+      - ./infrastructure/mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro
+      - db-data:/var/lib/mysql
+    stop_grace_period: 1m
+
+  node:
+    image: node:16
+    container_name: node
+    volumes:
+      - ./backend:/var/www/app
+    working_dir: /var/www/app
+
+volumes:
+  db-data:
+    driver: local
