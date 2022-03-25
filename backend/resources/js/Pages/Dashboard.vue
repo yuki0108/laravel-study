@@ -2,6 +2,14 @@
 import BreezeAuthenticatedLayout from '@/Layouts/Authenticated.vue';
 import { Head } from '@inertiajs/inertia-vue3';
 
+// const test: [
+//     {
+//         id: 1,
+//         taskName: "test",
+//         deadLine: "3/23",
+//         state: 1
+//     }
+// ]
 const tasks = [
     {
         id: 1,
@@ -40,30 +48,30 @@ const tasks = [
                     <div class="p-6 bg-white border-b border-gray-200">
                         You're logged in!!
                     </div>
-                    <div>
-                        +++
-                        {{ tasks }}
-                        ----
-                        <table>
-                            <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>タスク名</th>
-                                <th>期限</th>
-                                <th>状態</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr v-for="task in tasks">
-                                <td>{{ task.id }}</td>
-                                <td>{{ task.taskName }}</td>
-                                <td>{{ task.deadLine }}</td>
-                                <td>{{ task.state }}</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
+                    {{tasks[0]}}
+<!--                    <div>-->
+<!--                        +++-->
+<!--                        {{ tasks }}-->
+<!--                        &#45;&#45;&#45;&#45;-->
+<!--                        <table>-->
+<!--                            <thead>-->
+<!--                            <tr>-->
+<!--                                <th>ID</th>-->
+<!--                                <th>タスク名</th>-->
+<!--                                <th>期限</th>-->
+<!--                                <th>状態</th>-->
+<!--                            </tr>-->
+<!--                            </thead>-->
+<!--                            <tbody>-->
+<!--                            <tr v-for="task in tasks">-->
+<!--                                <td>{{ task.id }}</td>-->
+<!--                                <td>{{ task.taskName }}</td>-->
+<!--                                <td>{{ task.deadLine }}</td>-->
+<!--                                <td>{{ task.state }}</td>-->
+<!--                            </tr>-->
+<!--                            </tbody>-->
+<!--                        </table>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>

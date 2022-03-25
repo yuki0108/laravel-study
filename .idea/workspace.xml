@@ -6,23 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="380c1bda-a16e-4312-b7db-b7a0a38ef638" name="変更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/backend/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/resources/js/Pages/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/backend/resources/js/Pages/Dashboard.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/backend/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -180,7 +173,8 @@
       <workItem from="1647685990833" duration="149000" />
       <workItem from="1647686165531" duration="5000" />
       <workItem from="1647686190598" duration="4562000" />
-      <workItem from="1647849617616" duration="9191000" />
+      <workItem from="1647849617616" duration="10098000" />
+      <workItem from="1647867757402" duration="13000" />
     </task>
     <servers />
   </component>
